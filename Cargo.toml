@@ -1,8 +1,26 @@
 [package]
-name = "FL_sending_over_tcp"
+name = "fl_sending_over_tcp"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+
 [dependencies]
+f_messages = {path = "../../github.com/FMessages"}
+rand = "0.8.4"
+
+
+
+
+
+
+
